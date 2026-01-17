@@ -1,13 +1,5 @@
-import {
-  createRoom,
-  joinRoom,
-  removePlayer
-} from "../rooms/roomManager.js";
-
-import {
-  startAuction,
-  placeBid
-} from "../auction/auctionManager.js";
+import { createRoom, joinRoom, removePlayer } from "../rooms/roomManager.js";
+import { startAuction, placeBid } from "../auction/auctionManager.js";
 
 export default function registerSocketHandlers(io) {
   io.on("connection", (socket) => {
